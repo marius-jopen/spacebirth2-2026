@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import Image from "next/image";
+import CdnImage from "@/components/CdnImage";
 
 const FRAME_W = 1040;
 const FRAME_H = 826;
@@ -31,7 +31,7 @@ export default function GameEmbed() {
   return (
     <div className="flex justify-center relative" ref={containerRef}>
       <div className="relative inline-block w-full">
-        <Image
+        <CdnImage
           src="/images/media/frame_v2m.png"
           alt="Spacebirth 2 game frame"
           width={FRAME_W}

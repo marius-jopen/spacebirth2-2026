@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Lightbox, { Slide } from "yet-another-react-lightbox";
+import CdnImage from "@/components/CdnImage";
+import { cdnImage } from "@/lib/cdn";
 import Video from "yet-another-react-lightbox/plugins/video";
 import "yet-another-react-lightbox/styles.css";
 import Html5Video from "@/components/Html5Video";
@@ -33,7 +34,7 @@ export default function ImageGallery({ items }: ImageGalleryProps) {
       };
     }
     return {
-      src: item.src,
+      src: cdnImage(item.src),
       alt: item.alt || "",
     };
   });
@@ -53,7 +54,7 @@ export default function ImageGallery({ items }: ImageGalleryProps) {
             {item.type === "video" ? (
               <Html5Video src={item.src} />
             ) : (
-              <Image
+              <CdnImage
                 src={item.src}
                 alt={item.alt || ""}
                 width={1920}

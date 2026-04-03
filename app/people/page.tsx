@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import CdnImage from "@/components/CdnImage";
 
 export const metadata: Metadata = {
   title: "Spacebirth 2 — People",
@@ -46,7 +46,7 @@ export default function PeoplePage() {
 
       {/* Credits Image */}
       <section className="page-container mb-[7%]">
-        <Image
+        <CdnImage
           src="/images/people/credits.png"
           alt="Spacebirth 2 credits"
           width={437}

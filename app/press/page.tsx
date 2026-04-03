@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import CdnImage from "@/components/CdnImage";
 import VideoEmbed from "@/components/VideoEmbed";
 
 export const metadata: Metadata = {
@@ -33,28 +33,28 @@ export default function PressPage() {
 
       {/* Festival images */}
       <section className="page-container-narrow mb-[3%]">
-        <Image
+        <CdnImage
           src="/images/press/Stoner_logo_with_word-07_512.jpg"
           alt="Stoner Movie Festival logo"
           width={1024}
           height={816}
           className="w-full h-auto mb-[15px]"
         />
-        <Image
+        <CdnImage
           src="/images/press/oasis.jpg"
           alt="Oasis venue"
           width={1920}
           height={1920}
           className="w-full h-auto mb-[15px]"
         />
-        <Image
+        <CdnImage
           src="/images/press/315472309_458984976341539_633079337342069829_n.jpg"
           alt="Festival photo"
           width={1080}
           height={1440}
           className="w-full h-auto mb-[15px]"
         />
-        <Image
+        <CdnImage
           src="/images/press/315422687_458984203008283_8301423464304757707_n.jpg"
           alt="Festival photo"
           width={2048}
@@ -85,7 +85,7 @@ export default function PressPage() {
 
       {/* Screenshot */}
       <section className="page-container-narrow mb-[3%]">
-        <Image
+        <CdnImage
           src="/images/press/Screenshot-2024-10-12-at-21.14.17.png"
           alt="Seed & Spark campaign"
           width={1920}
@@ -113,7 +113,7 @@ export default function PressPage() {
 
       {/* Premiere photo */}
       <section className="page-container-narrow mb-[3%]">
-        <Image
+        <CdnImage
           src="/images/press/IMG_0722-1.jpg"
           alt="Premiere"
           width={2560}
@@ -125,14 +125,14 @@ export default function PressPage() {
       {/* Two photos side by side */}
       <section className="page-container-narrow mb-[3%]">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-[15px]">
-          <Image
+          <CdnImage
             src="/images/press/IMG_20191220_175619.jpg"
             alt="Babylon Berlin premiere"
             width={1920}
             height={2560}
             className="w-full h-auto"
           />
-          <Image
+          <CdnImage
             src="/images/press/IMG_20191217_182038.jpg"
             alt="Babylon Berlin premiere"
             width={1920}
@@ -144,7 +144,7 @@ export default function PressPage() {
 
       {/* Full width photo */}
       <section className="page-container-narrow mb-[3%]">
-        <Image
+        <CdnImage
           src="/images/press/DSC4981.jpg"
           alt="Babylon Berlin premiere"
           width={4096}

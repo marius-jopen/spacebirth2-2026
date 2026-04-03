@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "www.spacebirth2.com",
         pathname: "/wp-content/uploads/**",
       },
+      {
+        protocol: "https",
+        hostname: "spacebirth2.b-cdn.net",
+        pathname: "/**",
+      },
     ],
   },
 };

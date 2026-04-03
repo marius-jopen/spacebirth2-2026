@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import HeroVideo from "@/components/HeroVideo";
+import CdnImage from "@/components/CdnImage";
 
 const projectLinks = [
   { href: "/media", title: "Media", image: "/images/shared/watch.jpg", w: 4096, h: 2731 },
@@ -33,7 +33,7 @@ export default function HomePage() {
       <section className="page-container pb-[8%]">
         <div className="grid grid-cols-12 gap-x-[1%] gap-y-[20px]">
           <div className="col-span-6 sm:col-span-3">
-            <Image
+            <CdnImage
               src="/images/home/aw3.png"
               alt="Spacebirth 2 artwork 3"
               width={1280}
@@ -42,7 +42,7 @@ export default function HomePage() {
             />
           </div>
           <div className="col-span-6 sm:col-span-3">
-            <Image
+            <CdnImage
               src="/images/home/aw2.png"
               alt="Spacebirth 2 artwork 2"
               width={1280}
@@ -51,7 +51,7 @@ export default function HomePage() {
             />
           </div>
           <div className="col-span-6 sm:col-span-3">
-            <Image
+            <CdnImage
               src="/images/home/aw1.png"
               alt="Spacebirth 2 artwork 1"
               width={1280}
@@ -60,7 +60,7 @@ export default function HomePage() {
             />
           </div>
           <div className="col-span-6 sm:col-span-3">
-            <Image
+            <CdnImage
               src="/images/home/aw4.png"
               alt="Spacebirth 2 artwork 4"
               width={1280}
@@ -75,7 +75,7 @@ export default function HomePage() {
       <section className="page-container pb-[7%]">
         <div className="grid grid-cols-12 gap-x-[1%] gap-y-[30px]">
           <div className="col-span-12 sm:col-span-5">
-            <Image
+            <CdnImage
               src="/images/home/dvd.gif"
               alt="Spacebirth 2 DVD"
               width={500}
@@ -114,7 +114,7 @@ export default function HomePage() {
                 <div className="thumb-title">
                   <span>{project.title}</span>
                 </div>
-                <Image
+                <CdnImage
                   src={project.image}
                   alt={`Spacebirth 2 - ${project.title}`}
                   width={project.w}

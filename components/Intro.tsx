@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
+import CdnImage from "@/components/CdnImage";
 
 export default function Intro() {
   const [hidden, setHidden] = useState(false);
@@ -35,7 +35,7 @@ export default function Intro() {
       className={`intro ${animating ? "animatehide" : ""}`}
       onClick={handleClick}
     >
-      <Image
+      <CdnImage
         src="/images/shared/intro.jpg"
         alt="Spacebirth 2"
         fill
