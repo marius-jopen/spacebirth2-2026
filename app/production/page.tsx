@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Spacebirth 2 — Production",
 };
 
-const CDN = "https://www.spacebirth2.com/wp-content/uploads/2024/10";
+const VIDEO_PATH = "/videos";
 
 interface Section {
   number: string;
@@ -19,7 +19,7 @@ function img(name: string): GalleryItem {
   return { type: "img", src: `/images/production/${name}` };
 }
 function vid(name: string): GalleryItem {
-  return { type: "video", src: `${CDN}/${name}` };
+  return { type: "video", src: `${VIDEO_PATH}/${name}` };
 }
 
 const sections: Section[] = [

@@ -12,7 +12,7 @@ export default function HeroVideo() {
         className="w-full h-auto block"
       >
         <source
-          src="https://www.spacebirth2.com/wp-content/uploads/2024/10/d91ec70e-8aa372c9.mp4"
+          src="/videos/d91ec70e-8aa372c9.mp4"
           type="video/mp4"
         />
       </video>
